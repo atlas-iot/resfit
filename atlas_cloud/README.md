@@ -34,6 +34,8 @@ sudo apt-get install mosquitto
 ```
 - Mosquitto client tools must be installed (mosquitto_passwd tool is required). These should be installed along with the Mosquitto broker.
 
+- For the `push notification` mechanism, ATLAS Cloud requires a valid Firebase connection. To configure this connection, please copy the private key exported from the Google Firebase platform, as a JSON file, in the following folder: https://github.com/atlas-iot/resfit/tree/master/atlas_cloud/atlas-web/src/main/resources/google. For detailed instructions on how to obtain this JSON file, please refer to the [Google Firebase guides].
+
 ---
 
 ### Configuration
@@ -119,3 +121,4 @@ See LICENSE file to read the full text.
 [ATLAS_Client]: https://github.com/atlas-iot/resfit/tree/master/atlas_client
 [ATLAS_Gateway]: https://github.com/atlas-iot/resfit/tree/master/atlas_gateway
 [UEFISCDI]: https://uefiscdi.gov.ro/
+[Google Firebase guides]: https://firebase.google.com/docs/guides
