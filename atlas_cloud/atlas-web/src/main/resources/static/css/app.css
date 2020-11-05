@@ -1,0 +1,175 @@
+body, #mainWrapper {
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+body {
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.floatRight {
+    float: right;
+    margin-right: 18px;
+}
+
+.has-error {
+    color: red;
+}
+
+.table-container {
+    padding-left: 20px;
+    line-height: 2.5;
+}
+.form-container {
+    background-color: rgba(234, 231, 231, 0.82);
+    padding: 30px;
+}
+
+.generic-container {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #EAE7E7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.custom-width {
+    width: 80px !important;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.header-text{
+   color: white;
+}
+.fade.in {
+    opacity: 1;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 1.25rem 1.25rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+#page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+   margin-left: -15rem;
+}
+.sidebar .sideNav-link:hover {
+    color: #fff;
+}
+.sidebar .sideNav-link.active {
+  color: #fff;
+}
+.sidebar .sideNav-link{
+      background-color: #212529;
+      color: rgba(255, 255, 255, 0.5);
+}
+#sidebar-wrapper{
+    background-color: #212529;
+     color: rgba(255, 255, 255, 0.5);
+}
+.menu-heading{
+     color: rgba(255, 255, 255, 0.25);
+      padding: 1.75rem 1rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+.ng-cloak {
+    display: none !important;
+}
+select {
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+.chart-container{
+    width:100%;
+    height:300px;
+    padding:0;
+}
+#chart-reputation, #chart-firewall {
+    width:100%;
+    min-width:100px;
+    min-height: 400px
+}
+.table-card {
+    border:1px solid black;
+}
+.table-entry {
+    border-right: 1px solid black;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#clientAlias {
+	background: transparent;
+	border: none;
+	font-size: 15px
+}
+#aliasLabel {
+	font-size: 15px;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

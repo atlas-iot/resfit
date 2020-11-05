@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="isLoading" type="boolean" />
+        <import type="android.view.View" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/commands_list_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/command_loading"
+                android:textAlignment="center"
+                app:visibility="@{isLoading? View.VISIBLE : View.GONE }" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commands_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#673AB7"
+                android:dividerHeight="4dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                app:visibility="@{isLoading ? View.GONE : View.VISIBLE }" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

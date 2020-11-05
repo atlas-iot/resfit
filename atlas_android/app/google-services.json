@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "632749537636",
+    "firebase_url": "https://atlas-android-543a2.firebaseio.com",
+    "project_id": "atlas-android-543a2",
+    "storage_bucket": "atlas-android-543a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632749537636:android:fd615a836a2e776cec2271",
+        "android_client_info": {
+          "package_name": "com.atlas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632749537636-m5rjiqp1mvhdvfnulmn775vfmfj47f17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSbaadiDoEJg2po84Stp8B0duR-oNyjxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632749537636-m5rjiqp1mvhdvfnulmn775vfmfj47f17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

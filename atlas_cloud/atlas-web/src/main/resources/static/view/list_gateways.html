@@ -1,0 +1,61 @@
+<section>
+    <div class="row generic-container mr-3">
+        <div class="col-xl-12 mx-auto">
+            <div class="card">
+                <div class="card-header"><span class="lead"><i class="fas fa-table mr-2"></i>List of Gateways </span></div>
+                <div class="table-container overflow-auto">
+                    <table class="table table-sm table-hover">
+                        <thead>
+                        <tr>
+                            <th width="5%">Nr.</th>
+                            <th width="20%">Alias</th>
+                            <th width="30%">Identity</th>
+                            <th width="30%">PSK</th>
+                            <th width="10%">Status</th>
+                            <th width="5%">
+                        </tr>
+                        </thead>
+                        <tbody ng-repeat="g in gateways" ng-switch on="isSelected($index)">
+                        <tr>
+                            <td><span>{{$index + 1}}</span></td>
+                            <td><a href="#!/gateway/{{g.identity}}/{{g.alias}}"><span ng-bind="g.alias"></span></a></td>
+                            <td><span ng-bind="g.identity"></span></td>
+                            <td><span ng-bind="g.psk"></span></td>
+                            <td><span class="dot"
+                                      ng-style="g.registered === true && {'background-color':'green'} || g.registered === false && {'background-color':'red'}"
+                                      data-toggle="tooltip" title="Last keep-alive time: {{g.lastKeepaliveTime}}">
+
+                        </span>
+                            </td>
+                            <td>
+                                <button type="button" ng-click="remove(g.identity, $index)"
+                                        class="btn"><i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button ng-if="isSelected($index)" ng-click="toggleRow($index)" type="button"
+                                        class="btn"
+                                        style="background-color:white">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                <button ng-if="!isSelected($index)" ng-click="toggleRow($index)" type="button"
+                                        class="btn"
+                                        style="background-color:white">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr ng-switch-when="true">
+                            <td></td>
+                            <td><span> <b>Last registered time:</b> {{g.lastRegistertTime == null ? 'N/A' : g.lastRegistertTime}}</span></td>
+                            <td><span> <b>Last keep-alive time:</b> {{g.lastKeepaliveTime == null ? 'N/A' : g.lastKeepaliveTime}}</span></td>
+                            <td><span> <b>Keep-alive counter:</b>  {{g.keepaliveCounter == null ? 'N/A' : g.keepaliveCounter}}</span></td>
+                            <td><span> <b>Claimed:</b>  {{(g.gatewayInfo.owner == null || g.gatewayInfo.owner == "") ? 'No' : 'Yes'}}</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

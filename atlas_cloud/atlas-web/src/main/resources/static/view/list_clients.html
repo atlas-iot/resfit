@@ -1,0 +1,65 @@
+<section>
+    <div class="row generic-container mr-3">
+        <div class="col-xl-12 mx-auto">
+            <button type="button" class="btn btn-dark" ng-click="gotoGatewayList()">&laquo; Back to gateway list</button>
+            <div class="card">
+                <div class="card-header">
+                    <span class="lead"><i class="fas fa-table mr-2"></i>Clients List for Gateway {{gw_alias}}</span>
+                    <button type="button" ng-click="forceSync(gw_identity)"
+                            class="btn float-right"><i class="fas fa-sync-alt"></i>
+                    </button>
+                </div>
+                <div class="alert alert-success" ng-show="alertSyncDisplayed">
+                    <strong>Success!</strong> The clients were synchronized successfully!
+                </div>
+                <div class="alert alert-danger" ng-show="alertSyncFailure">
+                    <strong>Failure!</strong> The gateway is not active!
+                </div>
+                <div class="table-container overflow-auto">
+                    <table class="table table-sm table-hover">
+                        <thead>
+                        <tr>
+                            <th width="5%">Nr.</th>
+                            <th width="17%">Client Identity</th>
+                            <th width="17%"> Hostname</th>
+                            <th width="17%">
+                                <select ng-model="selectedOption">
+                                    <option value="">System Reputation</option>
+                                    <option value="temperatureReputation">Temperature Reputation</option>
+                                </select>
+                            </th>
+                            <th width="15%"> Alias</th>
+                            <th width="15%"> Last Register Time</th>
+                            <th width="10%"> Status</th>
+                            <th width="%4"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="c in clients">
+                            <td>{{$index + 1}}</td>
+                            <td><a href="#!/client/{{gw_identity}}/{{c.identity}}"><span
+                                    ng-bind="c.identity"></span></a>
+                            <td><span></span>{{c.hostname == null ? 'N/A' : c.hostname}}</td>
+                            <td class="pl-5"><span
+                                    ng-bind="selectedOption == 'temperatureReputation' ? c.temperatureReputation == null ? 'N/A' : c.temperatureReputation : c.systemReputation == null ? 'N/A' : c.systemReputation"></span>
+                            </td>
+                            <td><span>{{c.alias == null ? 'N/A' : c.alias}}</span></td>
+                            <td><span>{{c.lastRegisterTime == null ? 'N/A' : c.lastRegisterTime}}</span></td>
+                            <td><span class="dot"
+                                      ng-style="c.registered === 'true' && {'background-color':'green'} || c.registered === 'false' && {'background-color':'red'}"
+                                      data-toggle="tooltip" title="Last keep-alive time: {{c.lastKeepAliveTime}}">
+							</span>
+                            </td>
+                            <td>
+                                <button type="button" ng-click="remove(gw_identity, c.identity, $index)"
+                                        class="btn"><i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

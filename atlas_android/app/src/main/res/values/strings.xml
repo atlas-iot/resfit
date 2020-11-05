@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ATLAS IoT</string>
+    <string name="gateway_claim_title">Claim gateway</string>
+    <string name="gateway_claim_hint_ip">Insert gateway IP address</string>
+    <string name="gateway_claim_hint_code">Insert code</string>
+    <string name="gateway_claim_hint_alias">Insert alias</string>
+    <string name="gateway_claim_button">Claim</string>
+    <string name="gateway_claim_note">Note! The code can be seen in the gateway log file.</string>
+    <string name="gateway_claim_success">Gateway was claimed successfully</string>
+    <string name="gateway_claim_error">An error occurred when claiming the gateway</string>
+    <string name="gateway_claim_button_ok">OK</string>
+    <string name="gateway_claim_time">Claim time: </string>
+
+    <string name="all_identity">Identity: </string>
+
+    <string name="gateway_list_loading">Gateway list is loading …</string>
+    <string name="gateway_list_title">Gateway list</string>
+    <string name="gateway_list_empty_gateway">Gateway does not have pending commands</string>
+
+    <string name="client_list_loading">Client list is loading …</string>
+    <string name="client_list_title">Client list</string>
+    <string name="client_list_empty_client">Client does not have pending commands</string>
+
+    <string name="command_list_title">Command list</string>
+    <string name="command_loading">Command list is loading …</string>
+    <string name="command_sequence_number">Seq. Nr.: </string>
+    <string name="command_payload">Payload: </string>
+    <string name="command_client_identity">Client identity: </string>
+    <string name="command_create_time">Create time: </string>
+
+    <string name="all_pending_commands">Pending commands: </string>
+
+    <string name="home_total_commands_waiting">Commands are waiting to be approved</string>
+    <string name="home_total_command_waiting">Command is waiting to be approved</string>
+    <string name="home_see_commands_button">See commands</string>
+
+    <string name="main_home_tab_title">Home</string>
+    <string name="main_claim_tab_title">Claim</string>
+    <string name="main_commands_tab_title">Commands</string>
+
+    <string name="notification_title">ATLAS IoT commands</string>
+    <string name="notification_text">New commands fetched from cloud</string>
+
+    <string name="menu_force_sync_commands">Force sync commands</string>
+</resources>
