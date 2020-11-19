@@ -57,6 +57,7 @@ Each individual component of ATLAS RESFIT has a custom installation script. Plea
 
 ## Authors
 ATLAS RESFIT was developed by:
+* Ion Bica
 * Bogdan-Cosmin Chifor
 * Stefan-Ciprian Arseni
 * Mihai Coca
