@@ -64,7 +64,7 @@ ATLAS RESFIT was developed by:
 * Mirabela Medvei
 * Ioana Cismas
 
-ATLAS project was sponsored by [UEFISCDI].
+This work was supported by a grant of the Romanian Ministry of Research and Innovation, CCCDI – UEFISCDI, project number PN-III-P1-1.2-PCCDI-2017-0272/ Avant-garde Technology Hub for Advanced Security (ATLAS), within PNCDI III.
 
 ----
 
@@ -78,4 +78,3 @@ See LICENSE file to read the full text.
 [ATLAS_Cloud]: https://github.com/atlas-iot/resfit/tree/master/atlas_cloud
 [ATLAS_Mosquitto]: https://github.com/atlas-iot/mosquitto/tree/atlas_plugin
 [ATLAS_Android]: https://github.com/atlas-iot/resfit/tree/master/atlas_android
-[UEFISCDI]: https://uefiscdi.gov.ro/

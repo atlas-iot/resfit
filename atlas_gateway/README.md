@@ -67,12 +67,13 @@ This module provides means for independently testing the reputation-based filter
 
 ## Authors
 ATLAS Gateway was developed by:
+* Ion Bica
 * Bogdan-Cosmin Chifor
 * Stefan-Ciprian Arseni
 * Mihai Coca
 * Ioana Cismas
 
-ATLAS project is sponsored by [UEFISCDI].
+This work was supported by a grant of the Romanian Ministry of Research and Innovation, CCCDI – UEFISCDI, project number PN-III-P1-1.2-PCCDI-2017-0272/ Avant-garde Technology Hub for Advanced Security (ATLAS), within PNCDI III.
 
 ----
 
@@ -84,5 +85,4 @@ See LICENSE file to read the full text.
 [ATLAS_Client]: https://github.com/atlas-iot/resfit/tree/master/atlas_client
 [ATLAS_Cloud]: https://github.com/atlas-iot/resfit/tree/master/atlas_cloud
 [ATLAS_Mosquitto]: https://github.com/atlas-iot/mosquitto/tree/atlas_plugin
-[UEFISCDI]: https://uefiscdi.gov.ro/
 [Ubuntu_MATE_20.04.1LTS]: https://wiki.odroid.com/odroid-xu4/os_images/linux/ubuntu_5.4/mate/20200818

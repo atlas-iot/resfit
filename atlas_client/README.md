@@ -63,12 +63,13 @@ Example of usage:
 
 ## Authors
 ATLAS Client was developed by:
+* Ion Bica
 * Bogdan-Cosmin Chifor
 * Stefan-Ciprian Arseni
 * Ioana Cismas
 * Mihai Coca
 
-ATLAS project is sponsored by [UEFISCDI].
+This work was supported by a grant of the Romanian Ministry of Research and Innovation, CCCDI – UEFISCDI, project number PN-III-P1-1.2-PCCDI-2017-0272/ Avant-garde Technology Hub for Advanced Security (ATLAS), within PNCDI III.
 
 ----
 
@@ -79,4 +80,3 @@ See LICENSE file to read the full text.
 
 [ATLAS_Gateway]: https://github.com/atlas-iot/resfit/tree/master/atlas_gateway
 [ATLAS_RESFIT]: https://github.com/atlas-iot/resfit
-[UEFISCDI]: https://uefiscdi.gov.ro/

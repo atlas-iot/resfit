@@ -106,10 +106,11 @@ cp misc/scripts/pki/artifacts/servers/<FQDN>/<FQDN>.key.pem <Tomcat dir>/conf/se
 
 ## Authors
 ATLAS Cloud was developed by:
+* Ion Bica
 * Bogdan-Cosmin Chifor
 * Mirabela Medvei
 
-ATLAS project is sponsored by [UEFISCDI].
+This work was supported by a grant of the Romanian Ministry of Research and Innovation, CCCDI – UEFISCDI, project number PN-III-P1-1.2-PCCDI-2017-0272/ Avant-garde Technology Hub for Advanced Security (ATLAS), within PNCDI III.
 
 ----
 
@@ -120,5 +121,4 @@ See LICENSE file to read the full text.
 
 [ATLAS_Client]: https://github.com/atlas-iot/resfit/tree/master/atlas_client
 [ATLAS_Gateway]: https://github.com/atlas-iot/resfit/tree/master/atlas_gateway
-[UEFISCDI]: https://uefiscdi.gov.ro/
 [Google Firebase guides]: https://firebase.google.com/docs/guides
