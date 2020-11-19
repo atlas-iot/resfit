@@ -30,7 +30,7 @@ ATLAS Client was developed by:
 * Bogdan-Cosmin Chifor
 * Mirabela Medvei
 
-This work was supported by a grant of the Romanian Ministry of Research and Innovation, CCCDI – UEFISCDI, project number PN-III-P1-1.2-PCCDI-2017-0272/ Avant-garde Technology Hub for Advanced Security (ATLAS), within PNCDI III.
+This work was supported by a grant of the Romanian Ministry of Research and Innovation, CCCDI – UEFISCDI, project number PN-III-P1-1.2-PCCDI-2017-0272/Avant-garde Technology Hub for Advanced Security (ATLAS), within PNCDI III.
 
 ----
 
